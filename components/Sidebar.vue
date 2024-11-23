@@ -1,30 +1,81 @@
+<!-- components/Sidebar.vue -->
 <template>
-  <div class="flex flex-col h-full p-6 text-white bg-gray-900">
-    <div class="flex-1 space-y-4">
-      <div class="flex items-center mb-4 space-x-4">
-        <div class="w-12 h-12 overflow-hidden rounded-full">
-          <img
-            src="https://via.placeholder.com/400x400"
-            alt="Cole Caccamise"
-            class="object-cover w-full h-full"
-          />
-        </div>
+  <aside class="sticky top-0 hidden w-48 h-screen py-20 md:block">
+    <nav
+      class="flex flex-col w-full h-full gap-12"
+      aria-label="Desktop navigation"
+    >
+      <div class="flex flex-col items-start w-full gap-4 text-left">
+        <img
+          src="../assets/img/avatar.jpeg"
+          alt="Amar Al Fatah"
+          class="rounded-full"
+          width="72"
+          height="72"
+        />
         <div>
-          <h2 class="text-xl font-bold">Cole Caccamise</h2>
-          <p class="text-gray-400">Software Engineer</p>
+          <span class="text-lg font-medium">Amar Al Fatah</span>
+          <p class="text-mygray">Software Engineer</p>
         </div>
       </div>
-      <nav>
-        <ul class="space-y-2">
-          <li><a href="#" class="block hover:text-gray-400">Home</a></li>
-          <li><a href="#" class="block hover:text-gray-400">Letters</a></li>
-          <li><a href="#" class="block hover:text-gray-400">Drops</a></li>
-          <li><a href="#" class="block hover:text-gray-400">Stack</a></li>
-          <li><a href="#" class="block hover:text-gray-400">Vault</a></li>
-          <li><a href="#" class="block hover:text-gray-400">Links</a></li>
-          <li><a href="#" class="block hover:text-gray-400">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </div>
+      <ul class="flex flex-col gap-4 list-none">
+        <li>
+          <NuxtLink
+            to="/"
+            class="flex items-center gap-2 py-1 text-mywhite hover:text-mywhite"
+          >
+            <span>Home</span>
+          </NuxtLink>
+        </li>
+        <li>
+          <NuxtLink
+            to="/letters"
+            class="flex items-center gap-2 py-1 text-mygray hover:text-mywhite"
+          >
+            <span>Letters</span>
+          </NuxtLink>
+        </li>
+        <li>
+          <NuxtLink
+            to="/drops"
+            class="flex items-center gap-2 py-1 text-mygray hover:text-mywhite"
+          >
+            <span>Drops</span>
+          </NuxtLink>
+        </li>
+        <li>
+          <NuxtLink
+            to="/stack"
+            class="flex items-center gap-2 py-1 text-mygray hover:text-mywhite"
+          >
+            <span>Stack</span>
+          </NuxtLink>
+        </li>
+        <li>
+          <NuxtLink
+            to="/vault"
+            class="flex items-center gap-2 py-1 text-mygray hover:text-mywhite"
+          >
+            <span>Vault</span>
+          </NuxtLink>
+        </li>
+        <li>
+          <NuxtLink
+            to="/links"
+            class="flex items-center gap-2 py-1 text-mygray hover:text-mywhite"
+          >
+            <span>Links</span>
+          </NuxtLink>
+        </li>
+        <li>
+          <NuxtLink
+            to="#connect"
+            class="flex items-center gap-2 py-1 text-mygray hover:text-mywhite"
+          >
+            <span>Contact</span>
+          </NuxtLink>
+        </li>
+      </ul>
+    </nav>
+  </aside>
 </template>
