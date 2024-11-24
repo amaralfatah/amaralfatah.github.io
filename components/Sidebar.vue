@@ -22,7 +22,8 @@
         <li>
           <NuxtLink
             to="/"
-            class="flex items-center gap-2 py-1 text-mywhite hover:text-mywhite"
+            class="flex items-center gap-2 py-1 text-mygray hover:text-mywhite"
+            :class="{ active: $route.path === '/' }"
           >
             <span>Home</span>
           </NuxtLink>
@@ -31,51 +32,18 @@
           <NuxtLink
             to="/portfolios"
             class="flex items-center gap-2 py-1 text-mygray hover:text-mywhite"
+            :class="{ active: $route.path === '/portfolios' }"
           >
             <span>Portfolio</span>
-          </NuxtLink>
-        </li>
-        <li>
-          <NuxtLink
-            to="/drops"
-            class="flex items-center gap-2 py-1 text-mygray hover:text-mywhite"
-          >
-            <span>Drops</span>
-          </NuxtLink>
-        </li>
-        <li>
-          <NuxtLink
-            to="/stack"
-            class="flex items-center gap-2 py-1 text-mygray hover:text-mywhite"
-          >
-            <span>Stack</span>
-          </NuxtLink>
-        </li>
-        <li>
-          <NuxtLink
-            to="/vault"
-            class="flex items-center gap-2 py-1 text-mygray hover:text-mywhite"
-          >
-            <span>Vault</span>
-          </NuxtLink>
-        </li>
-        <li>
-          <NuxtLink
-            to="/links"
-            class="flex items-center gap-2 py-1 text-mygray hover:text-mywhite"
-          >
-            <span>Links</span>
-          </NuxtLink>
-        </li>
-        <li>
-          <NuxtLink
-            to="#connect"
-            class="flex items-center gap-2 py-1 text-mygray hover:text-mywhite"
-          >
-            <span>Contact</span>
           </NuxtLink>
         </li>
       </ul>
     </nav>
   </aside>
 </template>
+
+<style scoped>
+.active {
+  color: var(--mywhite);
+}
+</style>

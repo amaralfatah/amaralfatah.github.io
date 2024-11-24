@@ -54,6 +54,38 @@
       </form>
     </div>
 
+    <!-- Project Section -->
+    <div class="flex flex-col gap-4">
+      <div class="pb-3 border-b border-gray-200 dark:border-gray-700">
+        <span class="font-medium text-mywhite">Projects</span>
+        <p class="text-mygray">Projects I'm working on</p>
+      </div>
+      <div class="flex flex-col gap-4">
+        <div
+          v-for="portfolio in portfolios.slice(0, 3)"
+          :key="portfolio.id"
+          class="flex flex-col"
+        >
+          <a
+            target="_blank"
+            class="flex items-center gap-4 py-6 no-underline transition-all duration-200 rounded-md hover:bg-gray-50 dark:hover:bg-gray-800 hover:px-3 hover:-mx-3"
+            :href="portfolio.link"
+          >
+            <div class="flex flex-col gap-1">
+              <span class="flex items-center gap-1">
+                {{ portfolio.name }}
+                <ExternalLinkIcon class="w-4 h-4" />
+              </span>
+              <span class="text-gray-500 dark:text-gray-400">
+                {{ portfolio.description }}
+              </span>
+            </div>
+          </a>
+        </div>
+        <ViewAllLink href="/portfolios" />
+      </div>
+    </div>
+
     <!-- Ventures Section -->
     <div class="flex flex-col gap-4">
       <div class="pb-3 border-b border-gray-200 dark:border-gray-700">
@@ -154,6 +186,7 @@
 <script setup>
 import { ExternalLinkIcon } from "lucide-vue-next";
 import avatarImage from "~/assets/img/avatar.jpeg";
+import portfolios from "@/data/portfolios.json";
 
 const products = [
   {
