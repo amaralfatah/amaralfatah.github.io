@@ -37,6 +37,15 @@
             <span>Portfolio</span>
           </NuxtLink>
         </li>
+        <li>
+          <NuxtLink
+            to="/links"
+            class="flex items-center gap-2 py-1 text-mygray hover:text-mywhite"
+            :class="{ active: $route.path === '/links' }"
+          >
+            <span>Link</span>
+          </NuxtLink>
+        </li>
       </ul>
     </nav>
   </aside>

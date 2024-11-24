@@ -2,7 +2,7 @@
 <template>
   <a
     :href="social.href"
-    class="flex items-center justify-center w-12 h-12 border rounded-md border-borders-non-interactive bg-sidebar-bg text-low-contrast-text hover:border-subtle-borders-interactive hover:bg-ui-component-default hover:text-high-contrast-text"
+    class="flex items-center justify-center w-12 h-12 border border-gray-200 rounded-md text-mygray dark:border-zinc-800 bg-gray-50 dark:bg-zinc-900 hover:text-mywhite hover:border-gray-700"
     target="_blank"
   >
     <component :is="icons[social.icon]" class="w-5 h-5" />
