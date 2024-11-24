@@ -31,7 +31,7 @@
             <span>Latest Video</span>
             <a
               class="flex items-center gap-1 text-sm text-low-contrast-text hover:text-high-contrast-text hover:opacity-90"
-              href="https://youtu.be/uAQpOmr3AKk"
+              href="https://www.youtube.com/watch?v=JwaWMLdM-ns"
             >
               <span>YouTube</span>
               <LucideArrowRight class="w-4 h-4" />
