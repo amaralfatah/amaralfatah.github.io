@@ -1,11 +1,10 @@
-<!-- components/SocialCard.vue -->
 <template>
   <div
     class="flex items-center justify-between w-full gap-4 px-6 py-4 transition-shadow border-2 rounded-md border-zinc-800 bg-zinc-900 hover:shadow-lg"
   >
     <div class="flex items-center gap-6">
-      <!-- Dynamic Icon from Lucide -->
-      <component :is="icons[social.icon]" class="text-mygray w-7 h-7" />
+      <!-- Menggunakan ikon dari Iconify -->
+      <Icon :icon="icons[social.icon]" class="text-mygray w-7 h-7" />
       <div class="flex flex-col">
         <span>{{ social.name }}</span>
         <span class="text-sm text-mygray">{{ social.description }}</span>
@@ -23,28 +22,20 @@
 </template>
 
 <script setup>
-import {
-  Twitter,
-  Instagram,
-  Linkedin,
-  Github,
-  Youtube,
-  Mail,
-  Link,
-} from "lucide-vue-next";
+import { Icon } from "@iconify/vue";
 
-// Mapping nama icon ke komponen
+// Mapping nama icon ke nama Iconify
 const icons = {
-  twitter: Twitter,
-  instagram: Instagram,
-  linkedin: Linkedin,
-  github: Github,
-  youtube: Youtube,
-  mail: Mail,
-  link: Link,
+  twitter: "ri:twitter-fill",
+  instagram: "ri:instagram-fill",
+  linkedin: "ri:linkedin-fill",
+  github: "ri:github-fill",
+  youtube: "ri:youtube-fill",
+  mail: "ri:mail-fill",
+  link: "ri:link",
+  tiktok: "ri:tiktok-fill",
 };
 
-// Props untuk data sosial media
 defineProps({
   social: {
     type: Object,
@@ -52,7 +43,3 @@ defineProps({
   },
 });
 </script>
-
-<style scoped>
-/* Tambahkan style tambahan jika dibutuhkan */
-</style>

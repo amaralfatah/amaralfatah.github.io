@@ -6,29 +6,23 @@
     target="_blank"
     rel="noopener noreferrer"
   >
-    <component :is="icons[social.icon]" class="w-5 h-5" />
+    <Icon :icon="icons[social.icon]" class="w-5 h-5" />
   </a>
 </template>
 
 <script setup>
-import {
-  Twitter,
-  Instagram,
-  Linkedin,
-  Github,
-  Youtube,
-  Mail,
-  Link,
-} from "lucide-vue-next";
+import { Icon } from "@iconify/vue";
 
+// Mapping nama icon ke nama Iconify
 const icons = {
-  twitter: Twitter,
-  instagram: Instagram,
-  linkedin: Linkedin,
-  github: Github,
-  youtube: Youtube,
-  mail: Mail,
-  link: Link,
+  twitter: "ri:twitter-fill",
+  instagram: "ri:instagram-fill",
+  linkedin: "ri:linkedin-fill",
+  github: "ri:github-fill",
+  youtube: "ri:youtube-fill",
+  mail: "ri:mail-fill",
+  link: "ri:link",
+  tiktok: "ri:tiktok-fill",
 };
 
 defineProps({
