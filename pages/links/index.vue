@@ -66,7 +66,7 @@
 
         <!-- Social Cards Section -->
         <SocialCard
-          v-for="social in socialLinks"
+          v-for="social in socials"
           :key="social.id"
           :social="social"
         />
@@ -76,58 +76,7 @@
 </template>
 
 <script setup>
-import {
-  LucideArrowRight,
-  LucideMail,
-  LucideTwitter,
-  LucideGithub,
-  LucideYoutube,
-  LucideDroplet,
-} from "lucide-vue-next";
-import SocialCard from "~/components/SocialCard.vue";
-
-const socialLinks = [
-  {
-    id: 1,
-    title: "Weekly Newsletter",
-    description: "Insights on how I run my one-person business.",
-    action: "Read",
-    url: "/letters?via=links",
-    icon: LucideMail,
-  },
-  {
-    id: 2,
-    title: "Twitter / X",
-    description: "Sharing what I'm working on.",
-    action: "Follow",
-    url: "https://caccamise.link/x",
-    icon: LucideTwitter,
-  },
-  {
-    id: 3,
-    title: "YouTube",
-    description: "Aesthetic tech videos.",
-    action: "Subscribe",
-    url: "https://caccamise.link/youtube",
-    icon: LucideYoutube,
-  },
-  {
-    id: 4,
-    title: "GitHub",
-    description: "Building software and tools.",
-    action: "Visit",
-    url: "https://git.new/cole",
-    icon: LucideGithub,
-  },
-  {
-    id: 5,
-    title: "Drops",
-    description: "Wallpapers, Notion templates, and more.",
-    action: "Browse",
-    url: "https://colecaccamise.com/drops?via=links",
-    icon: LucideDroplet,
-  },
-];
+import socials from "@/data/socials.json";
 </script>
 
 <style scoped>

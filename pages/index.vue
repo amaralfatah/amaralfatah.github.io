@@ -187,6 +187,7 @@
 import { ExternalLinkIcon } from "lucide-vue-next";
 import avatarImage from "~/assets/img/avatar.jpeg";
 import portfolios from "@/data/portfolios.json";
+import socials from "@/data/socials.json";
 
 const products = [
   {
@@ -214,39 +215,6 @@ const stack = [
     title: "Desk Setup",
     description: "My main workspace.",
     href: "/stack/setup",
-  },
-];
-
-const socials = [
-  {
-    id: "linkedin",
-    icon: "linkedin",
-    href: "https://linkedin.com/in/amaralfatah",
-  },
-  {
-    id: "mail",
-    icon: "mail",
-    href: "mailto:amaralfatah.me@gmail.com",
-  },
-  {
-    id: "twitter",
-    icon: "twitter",
-    href: "https://twitter.com/amaralfatah",
-  },
-  {
-    id: "instagram",
-    icon: "instagram",
-    href: "https://instagram.com/amaralfatah.me",
-  },
-  {
-    id: "github",
-    icon: "github",
-    href: "https://github.com/amaralfatah",
-  },
-  {
-    id: "youtube",
-    icon: "youtube",
-    href: "https://youtube.com/@amaralfatah447",
   },
 ];
 </script>
