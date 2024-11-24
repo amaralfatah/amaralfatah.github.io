@@ -1,55 +1,48 @@
 <template>
   <nav
-    class="block w-full px-8 py-4 border-b border-borders-non-interactive md:hidden"
+    class="block w-full px-6 py-4 border-b border-mygray md:hidden"
     aria-label="Mobile navigation"
   >
     <div class="flex items-center justify-between w-full">
       <NuxtLink class="flex flex-col select-none hover:opacity-90" to="/">
-        <span class="text-mywhite">Amar Al Fatah</span>
-        <span class="text-mygray">Software Engineer</span>
+        <span class="text-lg font-bold text-mywhite">Amar Al Fatah</span>
+        <span class="text-sm text-mygray">Software Engineer</span>
       </NuxtLink>
       <button
         @click="toggleMobileMenu"
-        class="flex items-center justify-center w-12 h-12 transition-all border rounded-md pointer-cursor z-1 border-borders-non-interactive bg-myblack text-mygray hover:border-subtle-borders-interactive hover:bg-ui-component-default hover:text-high-contrast-text"
+        class="flex items-center justify-center w-10 h-10 transition-all border rounded-md pointer-cursor z-1 border-mygray text-mygray hover:border-mywhite hover:text-high-contrast-text"
       >
-        <!-- Mengganti MenuIcon dengan Iconify -->
-        <iconify-icon icon="material-symbols:menu" class="w-5 h-5" />
+        <Icon icon="heroicons-outline:menu" class="w-6 h-6" />
       </button>
     </div>
 
     <!-- Mobile Menu -->
-    <ul
-      class="absolute left-0 top-[81px] z-10 flex w-full list-none flex-col items-center gap-4 bg-myblack py-4"
-      :class="{
-        'max-h-0 opacity-0': !isMobileMenuOpen,
-        'max-h-screen opacity-100': isMobileMenuOpen,
-      }"
-      style="overflow: hidden"
-    >
-      <li
-        v-for="link in menuLinks"
-        :key="link.href"
-        class="transition-opacity duration-300 ease-in-out delay-50"
-        :class="{ 'opacity-0': !isMobileMenuOpen }"
+    <transition name="slide-fade">
+      <ul
+        v-if="isMobileMenuOpen"
+        class="absolute left-0 top-[73px] z-10 flex w-full list-none flex-col items-center gap-4 bg-myblack py-4"
       >
-        <NuxtLink
-          :to="link.href"
-          class="flex items-center gap-2 py-1 hover:text-high-contrast-text"
-          :class="
-            $route.path === link.href
-              ? 'text-high-contrast-text'
-              : 'text-mygray'
-          "
-        >
-          <span>{{ link.name }}</span>
-        </NuxtLink>
-      </li>
-    </ul>
+        <li v-for="link in menuLinks" :key="link.href" class="w-full">
+          <NuxtLink
+            :to="link.href"
+            class="flex items-center gap-2 px-6 py-3 hover:text-high-contrast-text"
+            :class="
+              $route.path === link.href
+                ? ' text-high-contrast-text'
+                : 'text-mygray'
+            "
+          >
+            <span>{{ link.name }}</span>
+          </NuxtLink>
+        </li>
+      </ul>
+    </transition>
   </nav>
 </template>
 
 <script setup>
 import { ref } from "vue";
+import { Icon } from "@iconify/vue";
 
 const isMobileMenuOpen = ref(false);
 

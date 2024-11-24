@@ -1,3 +1,4 @@
+<!-- layouts/default.vue -->
 <template>
   <div class="w-full min-h-screen text-mywhite">
     <!-- Mobile Navigation -->
@@ -15,9 +16,23 @@
         <!-- Main Content -->
         <slot />
 
-        <!-- Footer -->
-        <Footer />
+        <!-- Footer - Gunakan v-show untuk handling visibility -->
+        <Footer ref="footerRef" v-show="showFooter" />
       </div>
     </div>
   </div>
 </template>
+
+<script setup>
+import { ref, onMounted } from "vue";
+
+// State untuk mengontrol visibility footer
+const showFooter = ref(false);
+const footerRef = ref(null);
+
+// Handle mounting
+onMounted(() => {
+  // Set footer visible setelah mounted
+  showFooter.value = true;
+});
+</script>

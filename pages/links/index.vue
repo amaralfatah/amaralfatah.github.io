@@ -38,7 +38,7 @@
               <LucideArrowRight class="w-4 h-4" />
             </a>
           </div>
-          <div class="overflow-hidden rounded-md">
+          <div class="overflow-hidden rounded-md aspect-video">
             <lite-youtube
               videoid="uAQpOmr3AKk"
               params="web-share;"
@@ -47,8 +47,7 @@
               "
             >
               <iframe
-                width="100%"
-                height="315"
+                class="w-full h-full"
                 src="https://www.youtube.com/embed/JwaWMLdM-ns?si=BoH2U6a1dg3J6SIQ"
                 title="YouTube video player"
                 frameborder="0"
