@@ -29,10 +29,10 @@
         </li>
         <li>
           <NuxtLink
-            to="/letters"
+            to="/portfolios"
             class="flex items-center gap-2 py-1 text-mygray hover:text-mywhite"
           >
-            <span>Letters</span>
+            <span>Portfolio</span>
           </NuxtLink>
         </li>
         <li>
