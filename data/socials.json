@@ -46,5 +46,13 @@
     "name": "YouTube",
     "description": "Subscribe to my channel",
     "action": "Subscribe"
+  },
+  {
+    "id": "tiktok",
+    "icon": "tiktok",
+    "url": "https://tiktok.com/@amaralfatah",
+    "name": "TikTok",
+    "description": "Check out my TikTok videos",
+    "action": "Watch"
   }
 ]
