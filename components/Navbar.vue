@@ -12,7 +12,8 @@
         @click="toggleMobileMenu"
         class="flex items-center justify-center w-12 h-12 transition-all border rounded-md pointer-cursor z-1 border-borders-non-interactive bg-myblack text-mygray hover:border-subtle-borders-interactive hover:bg-ui-component-default hover:text-high-contrast-text"
       >
-        <MenuIcon class="w-5 h-5" />
+        <!-- Mengganti MenuIcon dengan Iconify -->
+        <iconify-icon icon="material-symbols:menu" class="w-5 h-5" />
       </button>
     </div>
 
@@ -49,16 +50,12 @@
 
 <script setup>
 import { ref } from "vue";
-import { MenuIcon } from "lucide-vue-next";
 
 const isMobileMenuOpen = ref(false);
 
 const menuLinks = [
   { href: "/", name: "Home" },
-  { href: "/letters", name: "Letters" },
-  { href: "/drops", name: "Drops" },
-  { href: "/stack", name: "Stack" },
-  { href: "/vault", name: "Vault" },
+  { href: "/portfolios", name: "Portfolios" },
   { href: "/links", name: "Links" },
   { href: "/#connect", name: "Contact" },
 ];

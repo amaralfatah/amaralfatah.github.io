@@ -1,3 +1,4 @@
+<!-- pages/links/index.vue -->
 <template>
   <div class="flex flex-col gap-8">
     <!-- Header Section -->
@@ -7,17 +8,17 @@
     </div>
     <div class="flex flex-col items-center gap-2 md:hidden">
       <img
-        alt="Cole Caccamise"
+        alt="Amar Al Fatah"
         loading="eager"
         width="72"
         height="72"
         decoding="async"
         class="rounded-full"
-        src="#"
+        src="/assets/img/avatar.jpeg"
         style="color: transparent"
       />
-      <h2>Cole Caccamise</h2>
-      <span>Solopreneur, Software Engineer, &amp; Designer</span>
+      <h2>Amar Al Fatah</h2>
+      <span>Software Engineer, &amp; Freelancer</span>
     </div>
 
     <!-- Links Section -->
