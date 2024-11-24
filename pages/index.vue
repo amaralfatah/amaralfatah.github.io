@@ -164,9 +164,11 @@
       <div>
         <span class="font-medium">Connect</span>
         <p>
-          Reach me directly at
-          <a class="text-blue-600 hover:opacity-90" href="mailto:your@email.com"
-            >your@email.com</a
+          Reach me at
+          <a
+            class="text-blue-600 hover:opacity-90"
+            href="mailto:amaralfatah.me@gmail.com"
+            >amaralfatah.me@gmail.com</a
           >
           or connect on social media below.
         </p>
