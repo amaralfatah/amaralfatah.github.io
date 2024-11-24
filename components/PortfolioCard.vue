@@ -3,7 +3,7 @@
   <a
     :href="portfolio.link"
     target="_blank"
-    class="flex flex-col gap-3 p-4 transition-colors border-2 border-gray-200 rounded-md dark:border-zinc-800 bg-gray-50 dark:bg-zinc-900 hover:bg-gray-100 dark:hover:bg-zinc-800"
+    class="flex flex-col gap-3 p-4 transition-colors border-2 rounded-md border-zinc-800 bg-zinc-900 hover:bg-zinc-800"
   >
     <div class="relative w-full pt-[56.25%]">
       <img
@@ -15,7 +15,7 @@
     </div>
     <div>
       <h3 class="text-lg font-medium">{{ portfolio.name }}</h3>
-      <p class="text-sm text-gray-500 dark:text-gray-400">
+      <p class="text-sm text-gray-400">
         {{ portfolio.description }}
       </p>
     </div>

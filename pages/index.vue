@@ -15,12 +15,14 @@
       </div>
       <div class="flex flex-col gap-2">
         <span class="font-medium">About</span>
-        <p>
+        <p class="text-mygray">
           I'm a final year computer science student and software engineer
           intern.
         </p>
-        <p>Developing and designing software is my passion.</p>
-        <p>
+        <p class="text-mygray">
+          Developing and designing software is my passion.
+        </p>
+        <p class="text-mygray">
           In my spare time I create tech videos on YouTube and build things for
           myself.
         </p>
@@ -32,7 +34,7 @@
       <div class="flex flex-col gap-2">
         <span class="font-medium">The Letter</span>
         <p>
-          <span
+          <span class="text-mygray"
             >Documenting the process of building my
             <u>one person businesses</u>. Sharing lessons I learn and
             interesting resources I find.</span
@@ -40,11 +42,11 @@
         </p>
       </div>
       <form
-        class="flex flex-col gap-4 p-0 bg-transparent border-0 rounded-md border-borders-non-interactive md:flex-row md:gap-0 md:border md:bg-ui-component-default md:p-2 md:pl-4"
+        class="flex flex-col gap-4 p-0 bg-transparent border-0 rounded-md border-borders-non-interactive md:flex-row md:gap-0 md:border md:bg-myblack md:p-2 md:pl-4"
       >
         <input
           placeholder="Your email"
-          class="flex items-center justify-between w-full px-4 py-3 overflow-hidden text-sm bg-transparent border rounded-lg outline-none border-subtle-borders-interactive hover:border-stronger-borders-interactive-focus-rings md:border-none md:bg-app-bg md:px-0 dark:bg-ui-component-default font-regular text-high-contrast-text placeholder-low-contrast-text"
+          class="flex items-center justify-between w-full px-4 py-3 overflow-hidden text-sm bg-transparent border rounded-lg outline-none border-subtle-borders-interactive hover:border-stronger-borders-interactive-focus-rings md:border-none md:px-0 font-regular text-mywhite placeholder:text-mygray"
           required
           type="email"
         />
@@ -56,7 +58,7 @@
 
     <!-- Project Section -->
     <div class="flex flex-col gap-4">
-      <div class="pb-3 border-b border-gray-200 dark:border-gray-700">
+      <div class="pb-3 border-b border-gray-700">
         <span class="font-medium text-mywhite">Projects</span>
         <p class="text-mygray">Projects I'm working on</p>
       </div>
@@ -68,7 +70,7 @@
         >
           <a
             target="_blank"
-            class="flex items-center gap-4 py-6 no-underline transition-all duration-200 rounded-md hover:bg-gray-50 dark:hover:bg-gray-800 hover:px-3 hover:-mx-3"
+            class="flex items-center gap-4 py-6 no-underline transition-all duration-200 rounded-md hover:bg-gray-800 hover:px-3 hover:-mx-3"
             :href="portfolio.link"
           >
             <div class="flex flex-col gap-1">
@@ -76,7 +78,7 @@
                 {{ portfolio.name }}
                 <ExternalLinkIcon class="w-4 h-4" />
               </span>
-              <span class="text-gray-500 dark:text-gray-400">
+              <span class="text-gray-400">
                 {{ portfolio.description }}
               </span>
             </div>
@@ -88,7 +90,7 @@
 
     <!-- Ventures Section -->
     <div class="flex flex-col gap-4">
-      <div class="pb-3 border-b border-gray-200 dark:border-gray-700">
+      <div class="pb-3 border-b border-gray-700">
         <span class="font-medium">Ventures</span>
         <p>Projects I'm working on</p>
       </div>
@@ -96,7 +98,7 @@
         <div class="flex flex-col">
           <a
             target="_blank"
-            class="flex items-center gap-4 py-6 no-underline transition-all duration-200 rounded-md hover:bg-gray-50 dark:hover:bg-gray-800 hover:px-3 hover:-mx-3"
+            class="flex items-center gap-4 py-6 no-underline transition-all duration-200 rounded-md hover:bg-gray-800 hover:px-3 hover:-mx-3"
             href="https://youtube.com/@yourchannel"
           >
             <div class="flex flex-col gap-1">
@@ -104,9 +106,7 @@
                 YouTube | Your Channel
                 <ExternalLinkIcon class="w-4 h-4" />
               </span>
-              <span class="text-gray-500 dark:text-gray-400"
-                >Your channel description.</span
-              >
+              <span class="text-gray-400">Your channel description.</span>
             </div>
           </a>
         </div>
@@ -115,7 +115,7 @@
 
     <!-- Featured Products Section -->
     <div class="flex flex-col gap-4">
-      <div class="pb-3 border-b border-gray-200 dark:border-gray-700">
+      <div class="pb-3 border-b border-gray-700">
         <span class="font-medium">Featured Drops</span>
         <p>Premium digital products I've created recently</p>
       </div>
@@ -133,7 +133,7 @@
 
     <!-- Featured Posts Section -->
     <div class="flex flex-col gap-4">
-      <div class="pb-3 border-b border-gray-200 dark:border-gray-700">
+      <div class="pb-3 border-b border-gray-700">
         <span class="font-medium">Featured Letters</span>
         <p>Recent posts from my newsletter</p>
       </div>
@@ -147,7 +147,7 @@
 
     <!-- Stack Section -->
     <div class="flex flex-col gap-4">
-      <div class="pb-3 border-b border-gray-200 dark:border-gray-700">
+      <div class="pb-3 border-b border-gray-700">
         <span class="font-medium">Stack</span>
         <p>Tools and products I use daily</p>
       </div>

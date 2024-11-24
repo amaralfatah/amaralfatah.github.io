@@ -1,7 +1,7 @@
 <!-- components/SocialCard.vue -->
 <template>
   <div
-    class="flex items-center justify-between w-full gap-4 px-6 py-4 transition-shadow border-2 border-gray-200 rounded-md dark:border-zinc-800 bg-gray-50 dark:bg-zinc-900 hover:shadow-lg"
+    class="flex items-center justify-between w-full gap-4 px-6 py-4 transition-shadow border-2 rounded-md border-zinc-800 bg-zinc-900 hover:shadow-lg"
   >
     <div class="flex items-center gap-6">
       <!-- Dynamic Icon from Lucide -->
@@ -13,7 +13,7 @@
     </div>
     <a
       :href="social.url"
-      class="flex items-center px-6 py-2 border border-gray-200 rounded-md dark:border-zinc-800 bg-gray-50 dark:bg-zinc-900 hover:bg-gray-100 dark:hover:bg-zinc-800 hover:text-mywhite"
+      class="flex items-center px-6 py-2 border rounded-md border-zinc-800 bg-zinc-900 hover:bg-zinc-800 hover:text-mywhite"
       target="_blank"
       rel="noopener noreferrer"
     >

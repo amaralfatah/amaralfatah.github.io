@@ -25,7 +25,7 @@
       <div class="flex flex-col w-full gap-4">
         <!-- Latest Video Section -->
         <div
-          class="flex flex-col gap-3 p-4 border-2 border-gray-200 rounded-md dark:border-zinc-800 bg-gray-50 dark:bg-zinc-900"
+          class="flex flex-col gap-3 p-4 border-2 rounded-md border-zinc-800 bg-zinc-900"
         >
           <div class="flex items-center justify-between">
             <span>Latest Video</span>
@@ -45,21 +45,16 @@
                 background-image: url('https://i.ytimg.com/vi_webp/uAQpOmr3AKk/sddefault.webp');
               "
             >
-              <button type="button" class="lty-playbtn">
-                <span class="lyt-visually-hidden">Play</span>
-              </button>
-              <noscript>
-                <iframe
-                  width="560"
-                  height="315"
-                  src="https://www.youtube.com/embed/2nx11P41xtY?si=OApGklgBTTkY791o"
-                  title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerpolicy="strict-origin-when-cross-origin"
-                  allowfullscreen
-                ></iframe>
-              </noscript>
+              <iframe
+                width="100%"
+                height="315"
+                src="https://www.youtube.com/embed/JwaWMLdM-ns?si=BoH2U6a1dg3J6SIQ"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
             </lite-youtube>
           </div>
         </div>
