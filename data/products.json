@@ -1,0 +1,32 @@
+[
+  {
+    "id": "wave",
+    "title": "Wave Wallpapers",
+    "type": "Wallpapers",
+    "price": 9
+  },
+  {
+    "id": "prism",
+    "title": "Prism Wallpapers",
+    "type": "Wallpapers",
+    "price": 9
+  },
+  {
+    "id": "gradient",
+    "title": "Gradient Wallpapers",
+    "type": "Wallpapers",
+    "price": 9
+  },
+  {
+    "id": "youtube-notion-template",
+    "title": "YouTube Creator Template",
+    "type": "Notion Template",
+    "price": 9
+  },
+  {
+    "id": "creatorpreneur",
+    "title": "Creatorpreneur - Creator Framer Template",
+    "type": "Framer Template",
+    "price": 39
+  }
+]
