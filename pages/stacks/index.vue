@@ -1,10 +1,11 @@
 <template>
   <main class="flex flex-col gap-8">
     <!-- Header Section -->
-    <section class="flex-col hidden gap-4 md:flex">
-      <h1 class="text-3xl font-medium">Tech Stacks</h1>
-      <p>Tools & technologies I use to bring ideas to life.</p>
-    </section>
+    <Header
+      :id="header"
+      :title="'Stacks'"
+      :subtitle="'Tools & technologies I use to bring ideas to life.'"
+    />
 
     <!-- Search Input -->
     <section

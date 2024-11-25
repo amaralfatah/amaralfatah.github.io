@@ -3,10 +3,11 @@
 <template>
   <main class="flex flex-col gap-8">
     <!-- Header Section -->
-    <section class="flex-col hidden gap-4 md:flex">
-      <h1 class="text-3xl font-medium">Portfolios</h1>
-      <p>Projects I'm working on. More added all the time.</p>
-    </section>
+    <Header
+      :id="header"
+      :title="'Portfolios'"
+      :subtitle="'Projects I\'m working on. More added all the time.'"
+    />
 
     <!-- Loading State -->
     <div v-if="isLoading" class="grid grid-cols-1 gap-4 md:grid-cols-2">

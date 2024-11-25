@@ -1,9 +1,11 @@
 <template>
   <section class="flex flex-col gap-16 bg-myblack text-mywhite">
-    <div class="flex flex-col gap-4">
-      <h1 class="text-3xl font-medium">Drops</h1>
-      <p class="text-mygray">Premium digital products I've created.</p>
-    </div>
+    <!-- Header Section -->
+    <Header
+      :id="header"
+      :title="'Drops'"
+      :subtitle="'Premium digital products I\'ve created.'"
+    />
     <div class="flex flex-col gap-4">
       <span class="font-medium text-mywhite">All drops</span>
       <div class="flex flex-col">

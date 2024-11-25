@@ -2,10 +2,11 @@
 <template>
   <main class="flex flex-col gap-8">
     <!-- Header Section -->
-    <section class="flex-col hidden gap-4 md:flex">
-      <h1 class="text-3xl font-medium">Links</h1>
-      <p>Quicklinks to my social platforms and projects.</p>
-    </section>
+    <Header
+      :id="header"
+      :title="'Links'"
+      :subtitle="'Quicklinks to my social platforms and projects.'"
+    />
     <section class="flex flex-col items-center gap-2 md:hidden">
       <img
         alt="Amar Al Fatah"
