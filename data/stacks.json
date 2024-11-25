@@ -1,0 +1,99 @@
+{
+  "stacks": [
+    {
+      "name": "JavaScript",
+      "icon": "devicon:javascript",
+      "category": "Languages"
+    },
+    {
+      "name": "Dart",
+      "icon": "devicon:dart",
+      "category": "Languages"
+    },
+    {
+      "name": "Kotlin",
+      "icon": "devicon:kotlin",
+      "category": "Languages"
+    },
+    {
+      "name": "PHP",
+      "icon": "devicon:php",
+      "category": "Languages"
+    },
+    {
+      "name": "Vue.js",
+      "icon": "devicon:vuejs",
+      "category": "Frameworks"
+    },
+    {
+      "name": "Nuxt.js",
+      "icon": "devicon:nuxtjs",
+      "category": "Frameworks"
+    },
+    {
+      "name": "Laravel",
+      "icon": "devicon:laravel",
+      "category": "Frameworks"
+    },
+    {
+      "name": "Flutter",
+      "icon": "devicon:flutter",
+      "category": "Frameworks"
+    },
+    {
+      "name": "TailwindCSS",
+      "icon": "devicon:tailwindcss",
+      "category": "CSS Frameworks"
+    },
+    {
+      "name": "Bootstrap",
+      "icon": "devicon:bootstrap",
+      "category": "CSS Frameworks"
+    },
+    {
+      "name": "PostgreSQL",
+      "icon": "devicon:postgresql",
+      "category": "Databases"
+    },
+    {
+      "name": "MySQL",
+      "icon": "devicon:mysql",
+      "category": "Databases"
+    },
+    {
+      "name": "Firebase",
+      "icon": "devicon:firebase",
+      "category": "Databases"
+    },
+    {
+      "name": "Git",
+      "icon": "devicon:git",
+      "category": "Tools"
+    },
+    {
+      "name": "VS Code",
+      "icon": "devicon:vscode",
+      "category": "Tools"
+    },
+    {
+      "name": "Figma",
+      "icon": "devicon:figma",
+      "category": "Tools"
+    },
+    {
+      "name": "Android Studio",
+      "icon": "devicon:androidstudio",
+      "category": "Tools"
+    },
+    {
+      "name": "Postman",
+      "icon": "devicon:postman",
+      "category": "Tools"
+    },
+    {
+      "name": "Nginx",
+      "icon": "devicon:nginx",
+      "category": "Tools"
+    }
+  ]
+}

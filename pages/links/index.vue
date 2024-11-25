@@ -1,12 +1,12 @@
 <!-- pages/links/index.vue -->
 <template>
-  <div class="flex flex-col gap-8">
+  <main class="flex flex-col gap-8">
     <!-- Header Section -->
-    <div class="flex-col hidden gap-4 md:flex">
+    <section class="flex-col hidden gap-4 md:flex">
       <h1 class="text-3xl font-medium">Links</h1>
       <p>Quicklinks to my social platforms and projects.</p>
-    </div>
-    <div class="flex flex-col items-center gap-2 md:hidden">
+    </section>
+    <section class="flex flex-col items-center gap-2 md:hidden">
       <img
         alt="Amar Al Fatah"
         loading="eager"
@@ -19,10 +19,10 @@
       />
       <h2>Amar Al Fatah</h2>
       <span>Software Engineer, &amp; Freelancer</span>
-    </div>
+    </section>
 
     <!-- Links Section -->
-    <div class="flex flex-col gap-16">
+    <section class="flex flex-col gap-16">
       <div class="flex flex-col w-full gap-4">
         <!-- Latest Video Section -->
         <div
@@ -66,8 +66,8 @@
           :social="social"
         />
       </div>
-    </div>
-  </div>
+    </section>
+  </main>
 </template>
 
 <script setup>

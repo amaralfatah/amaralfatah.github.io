@@ -48,6 +48,15 @@
         </li>
         <li>
           <NuxtLink
+            to="/stacks"
+            class="flex items-center gap-2 py-1 text-mygray hover:text-mywhite"
+            :class="{ active: $route.path === '/stacks' }"
+          >
+            <span>Stack</span>
+          </NuxtLink>
+        </li>
+        <li>
+          <NuxtLink
             to="/#connect"
             class="flex items-center gap-2 py-1 text-mygray hover:text-mywhite"
             :class="{ active: $route.path === '/links' }"
