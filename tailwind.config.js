@@ -1,18 +1,16 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [],
+  content: [
+    "./pages/**/*.{vue,js,ts,jsx,tsx}",
+    "./components/**/*.{vue,js,ts,jsx,tsx}",
+    "./layouts/**/*.{vue,js,ts,jsx,tsx}",
+  ],
   theme: {
     extend: {
       colors: {
-        myblack: {
-          DEFAULT: "#111111",
-        },
-        mygray: {
-          DEFAULT: "#B4B4B4",
-        },
-        mywhite: {
-          DEFAULT: "#EEEEEE",
-        },
+        myblack: "#111111",
+        mygray: "#B4B4B4",
+        mywhite: "#EEEEEE",
       },
       fontFamily: {
         sans: ["Poppins", "sans-serif"],

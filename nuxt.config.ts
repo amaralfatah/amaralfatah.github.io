@@ -3,13 +3,10 @@ export default defineNuxtConfig({
   compatibilityDate: "2024-11-01",
   devtools: { enabled: true },
   modules: ["@nuxtjs/tailwindcss", "@nuxt/image"],
-  css: ["~/assets/css/main.css"],
+  css: ["~/assets/css/main.css"], // Gunakan path yang benar
   components: {
     global: true,
     dirs: ["~/components"],
-  },
-  dir: {
-    assets: "assets",
   },
   app: {
     head: {
@@ -30,10 +27,9 @@ export default defineNuxtConfig({
         },
       ],
     },
-    baseURL: "/", // Karena menggunakan custom domain
+    baseURL: "/",
     buildAssetsDir: "assets",
   },
-  // SSG Configuration
   ssr: true,
   nitro: {
     preset: "github-pages",
