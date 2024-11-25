@@ -11,4 +11,16 @@
   body {
     @apply antialiased;
   }
+
+  p {
+    @apply text-mygray;
+  }
+
+  .input-base {
+    @apply px-4 py-3 transition-all duration-300 border rounded-lg outline-none bg-transparent border-mygray/10 focus:border-mygray/50;
+  }
+
+  .card-base {
+    @apply p-4 transition-all duration-300 border rounded-lg bg-myblack border-mygray/10 hover:border-mygray/50;
+  }
 }
