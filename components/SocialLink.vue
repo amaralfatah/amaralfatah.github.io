@@ -1,8 +1,7 @@
-<!-- components/SocialLink.vue -->
 <template>
   <a
     :href="social.url"
-    class="flex items-center justify-center w-12 h-12 border rounded-md text-mygray border-zinc-800 bg-zinc-900 hover:text-mywhite hover:border-gray-600"
+    class="flex items-center justify-center w-12 h-12 mb-4 border rounded-md text-mygray border-zinc-800 bg-zinc-900 hover:text-mywhite hover:border-gray-600 sm:mb-0"
     target="_blank"
     rel="noopener noreferrer"
   >
@@ -32,3 +31,7 @@ defineProps({
   },
 });
 </script>
+
+<style scoped>
+/* Custom styles for individual icons if needed */
+</style>
