@@ -12,7 +12,7 @@
         <a
           v-for="product in products"
           :key="product.id"
-          :href="`/drops/${product.id}`"
+          :href="`#`"
           target=""
           class="flex items-center gap-4 py-6 no-underline transition-all duration-200 rounded-md hover:bg-mygray/5 hover:px-3 hover:-mx-3"
         >

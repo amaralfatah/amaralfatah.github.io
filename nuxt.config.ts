@@ -30,7 +30,7 @@ export default defineNuxtConfig({
     baseURL: "/",
     buildAssetsDir: "assets",
   },
-  ssr: true,
+  ssr: false,
   nitro: {
     preset: "github-pages",
     routeRules: {
