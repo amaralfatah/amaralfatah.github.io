@@ -64,3 +64,9 @@
     </BaseSection>
   </main>
 </template>
+
+<script setup>
+useHead({
+  title: "Amar Al Fatah",
+});
+</script>

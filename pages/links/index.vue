@@ -73,6 +73,10 @@
 
 <script setup>
 import socials from "@/data/socials.json";
+
+useHead({
+  title: "Links - Amar Al Fatah",
+});
 </script>
 
 <style scoped>

@@ -106,6 +106,10 @@ import { Icon } from "@iconify/vue";
 import gsap from "gsap";
 import stacksData from "@/data/stacks.json";
 
+useHead({
+  title: "Stacks - Amar Al Fatah",
+});
+
 // State
 const searchQuery = ref("");
 const selectedCategories = ref([]);

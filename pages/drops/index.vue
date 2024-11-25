@@ -51,4 +51,8 @@
 
 <script setup>
 import products from "@/data/products.json";
+
+useHead({
+  title: "Drops - Amar Al Fatah",
+});
 </script>

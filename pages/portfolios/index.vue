@@ -50,6 +50,10 @@
 <script setup>
 import { ref, onMounted } from "vue";
 
+useHead({
+  title: "Portfolios - Amar Al Fatah",
+});
+
 const portfolios = ref([]);
 const isLoading = ref(true);
 const error = ref(null);

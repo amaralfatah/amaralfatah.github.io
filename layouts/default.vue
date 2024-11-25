@@ -25,7 +25,16 @@
 
 <script setup>
 import { ref, onMounted } from "vue";
+import { useHead } from "#imports";
 
+useHead({
+  title: "Amar Al Fatah",
+  meta: [
+    { name: "viewport", content: "width=device-width, initial-scale=1" },
+    { name: "author", content: "Amar" },
+  ],
+  link: [{ rel: "icon", type: "image/png", href: "/img/avatar.jpeg" }],
+});
 // State untuk mengontrol visibility footer
 const showFooter = ref(false);
 const footerRef = ref(null);
