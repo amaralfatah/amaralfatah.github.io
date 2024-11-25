@@ -15,6 +15,7 @@
     "@iconify-icons/heroicons-outline": "^1.2.5",
     "@iconify/vue": "^4.1.2",
     "@nuxt/image": "^1.8.1",
+    "@nuxtjs/robots": "^5.0.0",
     "@nuxtjs/tailwindcss": "^6.12.2",
     "gsap": "^3.12.5",
     "lucide-vue-next": "^0.460.0",

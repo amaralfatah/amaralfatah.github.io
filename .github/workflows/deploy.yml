@@ -1,0 +1,38 @@
+# .github/workflows/deploy.yml
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main # sesuaikan dengan branch utama Anda
+  workflow_dispatch: # memungkinkan trigger manual dari GitHub UI
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: "22"
+          cache: "npm"
+
+      - name: Install Dependencies
+        run: npm ci # menggunakan ci untuk instalasi yang lebih konsisten
+
+      - name: Generate Static Files
+        run: npm run generate
+
+      - name: Add .nojekyll file
+        run: touch .output/public/.nojekyll
+
+      - name: Create CNAME file
+        run: echo "amar.my.id" > .output/public/CNAME
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: .output/public
