@@ -8,15 +8,15 @@
         <div
           v-for="testimonial in testimonials"
           :key="testimonial.id"
-          class="flex justify-center flex-shrink-0 w-full px-4"
+          class="flex justify-center flex-shrink-0 w-full px-4 md:px-8"
         >
-          <div class="w-4/5 card-base">
-            <p class="mb-6 text-lg">"{{ testimonial.text }}"</p>
+          <div class="w-3/4 md:w-3/5 lg:w-3/4 card-base">
+            <p class="mb-6 text-lg md:text-xl">"{{ testimonial.text }}"</p>
             <div class="flex items-center gap-4">
               <img
                 :src="testimonial.avatar"
                 :alt="testimonial.name"
-                class="w-12 h-12 rounded-full"
+                class="w-12 h-12 rounded-full md:w-16 md:h-16"
               />
               <div>
                 <h4 class="font-medium">{{ testimonial.name }}</h4>
@@ -29,20 +29,19 @@
     </div>
 
     <div
-      class="absolute flex justify-between w-full px-4 -translate-y-1/2 top-1/2"
+      class="absolute z-10 flex justify-between w-full -translate-y-1/2 top-1/2"
     >
       <button
         @click="prevSlide"
-        class="p-2 transition-all duration-300 bg-transparent border rounded-full border-mygray/10 hover:border-mygray/50"
+        class="p-2 transition-all duration-300 bg-transparent rounded-full hover:border hover:border-mygray/50 focus:outline-none"
       >
-        <ChevronLeftIcon class="w-6 h-6" />
+        <ChevronLeftIcon class="w-6 h-6 md:w-8 md:h-8" />
       </button>
-
       <button
         @click="nextSlide"
-        class="p-2 transition-all duration-300 bg-transparent border rounded-full border-mygray/10 hover:border-mygray/50"
+        class="p-2 transition-all duration-300 bg-transparent rounded-full hover:border hover:border-mygray/50 focus:outline-none"
       >
-        <ChevronRightIcon class="w-6 h-6" />
+        <ChevronRightIcon class="w-6 h-6 md:w-8 md:h-8" />
       </button>
     </div>
   </div>
@@ -89,3 +88,7 @@ const prevSlide = () => {
     (currentSlide.value - 1 + testimonials.length) % testimonials.length;
 };
 </script>
+
+<style>
+/* No additional CSS needed, all styles are handled by Tailwind */
+</style>
