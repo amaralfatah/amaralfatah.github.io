@@ -1,6 +1,6 @@
 <template>
   <nav
-    class="block w-full px-6 py-4 border-b border-mygray md:hidden"
+    class="block w-full px-6 py-4 border-b border-mygray/20 md:hidden"
     aria-label="Mobile navigation"
   >
     <div class="flex items-center justify-between w-full">

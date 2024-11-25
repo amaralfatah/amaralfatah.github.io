@@ -23,7 +23,7 @@ const route = useRoute();
       <!-- Profile Section -->
       <div class="flex flex-col items-start w-full gap-4 text-left">
         <nuxt-img
-          src="/img/avatar.jpeg"
+          src="../assets/img/avatar.jpeg"
           alt="Amar Al Fatah"
           class="rounded-full"
           width="72"
