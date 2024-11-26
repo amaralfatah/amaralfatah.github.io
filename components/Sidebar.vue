@@ -8,7 +8,7 @@
     >
       <!-- Profile Section -->
       <div class="flex flex-col items-start w-full gap-4 text-left">
-        <nuxt-img
+        <img
           src="../assets/img/avatar.jpeg"
           alt="Amar Al Fatah"
           class="rounded-full"
