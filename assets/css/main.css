@@ -21,6 +21,6 @@
   }
 
   .card-base {
-    @apply p-4 transition-all duration-300 border rounded-lg bg-myblack border-mygray/10 hover:border-mygray/50;
+    @apply p-4 transition-all duration-300 border rounded-lg bg-mygray/5 border-mygray/10 hover:border-mygray/50;
   }
 }

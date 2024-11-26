@@ -4,7 +4,11 @@
     aria-label="Mobile navigation"
   >
     <div class="flex items-center justify-between w-full">
-      <NuxtLink class="flex flex-col select-none hover:opacity-90" to="/">
+      <NuxtLink
+        class="flex flex-col select-none hover:opacity-90"
+        to="/"
+        @click="closeMobileMenu"
+      >
         <span class="text-lg font-bold text-mywhite">Amar Al Fatah</span>
         <span class="text-sm text-mygray">Software Engineer</span>
       </NuxtLink>
@@ -31,6 +35,7 @@
                 ? ' text-high-contrast-text'
                 : 'text-mygray'
             "
+            @click="closeMobileMenu"
           >
             <span>{{ link.name }}</span>
           </NuxtLink>
@@ -48,12 +53,33 @@ const isMobileMenuOpen = ref(false);
 
 const menuLinks = [
   { href: "/", name: "Home" },
-  { href: "/portfolios", name: "Portfolios" },
-  { href: "/links", name: "Links" },
+  { href: "/portfolios", name: "Portfolio" },
+  { href: "/links", name: "Link" },
+  { href: "/stacks", name: "Stack" },
   { href: "/#connect", name: "Contact" },
 ];
 
 const toggleMobileMenu = () => {
   isMobileMenuOpen.value = !isMobileMenuOpen.value;
 };
+
+// Tambahkan fungsi untuk menutup menu
+const closeMobileMenu = () => {
+  isMobileMenuOpen.value = false;
+};
+
+// Optional: Tambahkan event listener untuk menutup menu saat klik di luar
+onMounted(() => {
+  document.addEventListener("click", (e) => {
+    const nav = document.querySelector("nav");
+    if (nav && !nav.contains(e.target) && isMobileMenuOpen.value) {
+      closeMobileMenu();
+    }
+  });
+});
+
+// Optional: Cleanup event listener
+onUnmounted(() => {
+  document.removeEventListener("click", closeMobileMenu);
+});
 </script>

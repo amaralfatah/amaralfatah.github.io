@@ -1,9 +1,6 @@
 <template>
-  <div
-    class="flex items-center justify-between w-full gap-4 px-6 py-4 transition-shadow border-2 rounded-md border-zinc-800 bg-zinc-900 hover:shadow-lg"
-  >
+  <div class="flex items-center justify-between w-full gap-4 card-base">
     <div class="flex items-center gap-6">
-      <!-- Menggunakan ikon dari Iconify -->
       <Icon :icon="icons[social.icon]" class="text-mygray w-7 h-7" />
       <div class="flex flex-col">
         <span>{{ social.name }}</span>

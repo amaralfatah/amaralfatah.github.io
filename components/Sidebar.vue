@@ -1,18 +1,4 @@
 <!-- components/Sidebar.vue -->
-<script setup>
-// Data navigasi
-const navItems = [
-  { path: "/", label: "Home" },
-  { path: "/portfolios", label: "Portfolio" },
-  { path: "/links", label: "Link" },
-  { path: "/stacks", label: "Stack" },
-  { path: "/drops", label: "Drop" },
-  { path: "/#connect", label: "Contact" },
-];
-
-// Computed property untuk active route
-const route = useRoute();
-</script>
 
 <template>
   <aside class="sticky top-0 hidden w-48 h-screen py-20 md:block">
@@ -38,15 +24,30 @@ const route = useRoute();
       <!-- Navigation Links -->
       <ul class="flex flex-col gap-4 list-none">
         <li v-for="item in navItems" :key="item.path">
-          <NuxtLink
+          <nuxt-link
             :to="item.path"
             class="flex items-center gap-2 py-1 transition-colors text-mygray hover:text-mywhite"
             :class="{ 'text-mywhite': route.path === item.path }"
           >
             <span>{{ item.label }}</span>
-          </NuxtLink>
+          </nuxt-link>
         </li>
       </ul>
     </nav>
   </aside>
 </template>
+
+<script setup>
+// Data navigasi
+const navItems = [
+  { path: "/", label: "Home" },
+  { path: "/portfolios", label: "Portfolio" },
+  { path: "/links", label: "Link" },
+  { path: "/stacks", label: "Stack" },
+  { path: "/drops", label: "Drop" },
+  { path: "/#connect", label: "Contact" },
+];
+
+// Computed property untuk active route
+const route = useRoute();
+</script>

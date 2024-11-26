@@ -1,5 +1,5 @@
 <template>
-  <section class="flex flex-col gap-16 bg-myblack text-mywhite">
+  <nain class="flex flex-col gap-8">
     <!-- Header Section -->
     <Header
       :id="header"
@@ -46,7 +46,7 @@
         >Become an affiliate</a
       >.</span
     >
-  </section>
+  </nain>
 </template>
 
 <script setup>

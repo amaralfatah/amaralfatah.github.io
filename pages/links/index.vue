@@ -18,17 +18,15 @@
         src="/assets/img/avatar.jpeg"
         style="color: transparent"
       />
-      <h2>Amar Al Fatah</h2>
-      <span>Software Engineer, &amp; Freelancer</span>
+      <h2 class="text-2xl font-bold">Amar Al Fatah</h2>
+      <span>Software Engineer &amp; Freelancer</span>
     </section>
 
     <!-- Links Section -->
     <section class="flex flex-col gap-16">
       <div class="flex flex-col w-full gap-4">
         <!-- Latest Video Section -->
-        <div
-          class="flex flex-col gap-3 p-4 border-2 rounded-md border-zinc-800 bg-zinc-900"
-        >
+        <div class="flex flex-col gap-3 card-base">
           <div class="flex items-center justify-between">
             <span>Latest Video</span>
             <a
