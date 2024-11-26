@@ -12,11 +12,11 @@
       <!-- Email -->
       <div class="flex justify-center gap-4 sm:justify-start">
         <a
-          href="mailto:your.email@example.com"
+          href="mailto:amaralfatah.me@gmail.com"
           class="flex items-center gap-2 text-blue-500 hover:text-blue-400"
         >
           <MailIcon class="w-5 h-5" />
-          your.email@example.com
+          amaralfatah.me@gmail.com
         </a>
       </div>
 

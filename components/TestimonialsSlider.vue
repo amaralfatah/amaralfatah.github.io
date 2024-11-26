@@ -11,7 +11,7 @@
           class="flex justify-center flex-shrink-0 w-full px-4 md:px-8"
         >
           <div class="w-3/4 md:w-3/5 lg:w-3/4 card-base">
-            <p class="mb-6 text-lg md:text-xl">"{{ testimonial.text }}"</p>
+            <p class="mb-6 text-base">"{{ testimonial.text }}"</p>
             <div class="flex items-center gap-4">
               <img
                 :src="testimonial.avatar"
@@ -43,6 +43,22 @@
       >
         <ChevronRightIcon class="w-6 h-6 md:w-8 md:h-8" />
       </button>
+    </div>
+
+    <!-- Dots indicator -->
+    <div class="flex justify-center gap-2 mt-6">
+      <button
+        v-for="(_, index) in testimonials"
+        :key="index"
+        @click="currentSlide = index"
+        class="w-2 h-2 transition-all duration-300 rounded-full sm:w-3 sm:h-3 focus:outline-none"
+        :class="[
+          currentSlide === index
+            ? 'bg-gray-400 scale-125'
+            : 'bg-gray-800 hover:bg-gray-400',
+        ]"
+        :aria-label="`Go to slide ${index + 1}`"
+      ></button>
     </div>
   </div>
 </template>
