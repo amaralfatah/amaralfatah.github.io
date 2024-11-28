@@ -10,13 +10,13 @@
     </BaseSection>
 
     <!-- Experience Section -->
-    <BaseSection
+    <!-- <BaseSection
       id="experience"
       title="Experience"
       subtitle="My professional journey"
     >
       <ExperienceTimeline />
-    </BaseSection>
+    </BaseSection> -->
 
     <!-- Services Section -->
     <BaseSection

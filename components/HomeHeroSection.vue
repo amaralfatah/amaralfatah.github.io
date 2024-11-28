@@ -11,8 +11,9 @@
       <h1 class="text-xl font-bold md:text-3xl">Mobile & Web Developer</h1>
     </div>
     <p class="max-w-xl">
-      I create mobile and web apps using Flutter and Laravel, delivering
-      efficient and quality solutions on time and budget.
+      Welcome to my personal website. I specialize in creating mobile and web
+      applications using Flutter and Laravel, delivering efficient, high-quality
+      solutions that meet your needs, on time and within budget.
     </p>
     <div class="flex gap-4">
       <NuxtLink

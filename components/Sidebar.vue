@@ -42,9 +42,10 @@
 const navItems = [
   { path: "/", label: "Home" },
   { path: "/portfolios", label: "Portfolio" },
-  { path: "/links", label: "Link" },
-  { path: "/stacks", label: "Stack" },
-  { path: "/drops", label: "Drop" },
+  { path: "/links", label: "Connection" },
+  { path: "/stacks", label: "Technology" },
+  { path: "/drops", label: "Product" },
+  { path: "/journeys", label: "Journey" },
   { path: "/#connect", label: "Contact" },
 ];
 
