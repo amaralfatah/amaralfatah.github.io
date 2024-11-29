@@ -1,5 +1,3 @@
-<!-- pages/portfolio/index.vue -->
-<!-- pages/portfolio/index.vue -->
 <template>
   <main class="flex flex-col gap-8">
     <!-- Header Section -->
@@ -65,7 +63,9 @@ const fetchPortfolios = async () => {
     await new Promise((resolve) => setTimeout(resolve, 1000));
     // Import portfolios data
     const data = await import("@/data/portfolios.json");
-    portfolios.value = data.default;
+    portfolios.value = data.default.sort(
+      (a, b) => new Date(b.date) - new Date(a.date)
+    );
   } catch (err) {
     error.value = "Failed to load portfolios. Please try again later.";
   } finally {
