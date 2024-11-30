@@ -1,0 +1,1 @@
+import{o as i,c as a,a as e,t as s}from"./COgTDpRK.js";const l={id:"{{ id }}",class:"flex-col hidden gap-4 md:flex"},n={class:"text-3xl font-medium"},d={__name:"Header",props:{id:String,title:{type:String,required:!0},subtitle:String},setup(t){return(o,r)=>(i(),a("section",l,[e("h1",n,s(t.title),1),e("p",null,s(t.subtitle),1)]))}};export{d as default};
