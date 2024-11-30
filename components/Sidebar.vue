@@ -34,7 +34,7 @@
       </ul>
     </nav>
     <p>
-      Jumlah Kunjungan : <span>{{ visitorCount }}</span>
+      Visitor counts : <span>{{ visitorCount }}</span>
     </p>
   </aside>
 </template>
