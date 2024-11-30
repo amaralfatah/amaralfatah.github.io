@@ -1,5 +1,4 @@
 <!-- components/Sidebar.vue -->
-
 <template>
   <aside class="sticky top-0 hidden w-48 h-screen py-20 md:block">
     <nav
@@ -34,10 +33,17 @@
         </li>
       </ul>
     </nav>
+    <p>
+      Jumlah Kunjungan : <span>{{ visitorCount }}</span>
+    </p>
   </aside>
 </template>
 
 <script setup>
+import { ref, onMounted } from "vue";
+import database from "~/plugins/firebase"; // Ubah import sesuai export default
+import { ref as dbRef, onValue, increment, set, get } from "firebase/database";
+
 // Data navigasi
 const navItems = [
   { path: "/", label: "Home" },
@@ -51,4 +57,32 @@ const navItems = [
 
 // Computed property untuk active route
 const route = useRoute();
+
+// Visitor tracking dengan Firebase
+const visitorCount = ref(0);
+const visitorsRef = dbRef(database, "visitors");
+
+onMounted(async () => {
+  if (process.client) {
+    // Tambahkan pengecekan ini
+    // Cek apakah sudah mengunjungi hari ini
+    const today = new Date().toISOString().split("T")[0];
+    const hasVisitedToday = localStorage.getItem(`visited_${today}`);
+
+    if (!hasVisitedToday) {
+      // Increment total visitors
+      const snapshot = await get(visitorsRef);
+      const currentCount = snapshot.val() || 0;
+      await set(visitorsRef, currentCount + 1);
+
+      // Set flag kunjungan hari ini
+      localStorage.setItem(`visited_${today}`, "true");
+    }
+
+    // Listen untuk updates
+    onValue(visitorsRef, (snapshot) => {
+      visitorCount.value = snapshot.val() || 0;
+    });
+  }
+});
 </script>
