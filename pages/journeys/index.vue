@@ -1,4 +1,4 @@
-<!-- pages/index.vue -->
+<!-- pages/development.vue -->
 <template>
   <main class="flex flex-col gap-16">
     <Header

@@ -1,4 +1,4 @@
-<!-- pages/links/index.vue -->
+<!-- pages/links/development.vue -->
 <template>
   <main class="flex flex-col gap-8">
     <!-- Header Section -->
